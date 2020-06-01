@@ -1,51 +1,66 @@
 <!doctype html>
-<html lang="en">
+<html lang="pl">
 <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 
-    <title>{% block title %}Welcome!{% endblock %}</title>
+    <title>{% block title %}{% endblock %}</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
-          integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
-            integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
-            crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="{{ asset('css/style.css') }}"/>
+    <!-- CSS -->
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}"/>
+    <noscript>
+        <link rel="stylesheet" href="{{ asset('css/noscript.css') }}"/>
+    </noscript>
+
     {% block stylesheets %}{% endblock %}
 </head>
 
-<body>
-<header>
-    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
-        <div class="container">
+<body class="is-preload">
 
-            <a class="navbar-brand" href="{{ path('welcome') }}">Home</a>
+{% block body %}{% endblock %}
 
-            <div class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ path('app_lucky_number') }}">Lucky Number</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ path('contact') }}">Contact</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
+<!-- Footer -->
+<footer id="footer">
+    <section>
+        <h2>O serwisie</h2>
+        <p>Serwis stanowi integralną część pracy licencjackiej na kierunku Elektroniczne przetwarzanie informacji na
+            Wydziale Zarządzania i Komunikacji Społecznej. Promotorem pracy jest <b>dr. Piotr Jordan
+                Śliwiński.</b><br><br>
+            Stronę wykonał <b>Paweł Garapich</b>.</p>
+    </section>
+    <section>
+        <h2>Dodatkowe informację</h2>
+        <dl class="alt">
+            <dt>Adres</dt>
+            <dd>ul. Miła 27 &bull; Kraków, 00-000 &bull; POLSKA</dd>
+            <dt>Telefon</dt>
+            <dd>(+48) 000 000 000</dd>
+            <dt>Email</dt>
+            <dd>pawelgarapich@usos.uj.edu.pl</dd>
+        </dl>
+        <ul class="icons">
+            <li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+            <li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+            <li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+            <li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+        </ul>
+    </section>
+    <p class="copyright">© Serwis stworzony w Symfony. Wygląd oparty na: <a href="https://html5up.net/"> HTML5
+            UP</a>. Zdjęcia: <a href="https://unsplash.com/">Unsplash</a>.</br>JMJ ✠ Pracę dedykuję Maryi Niepokalanej z
+        synowskim hołdem</p>
+</footer>
 
-    </nav>
-</header>
+</div>
 
-<main role="main" class="container main">
+<!-- Scripts -->
+<script src="{{ asset('js/jquery.min.js') }}"></script>
+<script src="{{ asset('js/jquery.scrollex.min.js') }}"></script>
+<script src="{{ asset('js/jquery.scrolly.min.js') }}"></script>
+<script src="{{ asset('js/browser.min.js') }}"></script>
+<script src="{{ asset('js/breakpoints.min.js') }}"></script>
+<script src="{{ asset('js/util.js') }}"></script>
+<script src="{{ asset('js/main.js') }}"></script>
 
-    {% include 'flash_messages.html.twig' %}
-
-    {% block main %}{% endblock %}
-</main>
 
 {% block javascripts %}{% endblock %}
 </body>

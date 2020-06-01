@@ -1,0 +1,85 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Artykuł{% endblock %}
+
+{% block body %}
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1>Wstęp</h1>
+        <p>Co to jest Prokrastynacja?</p>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Content -->
+        <section id="content" class="main">
+            <span class="image main"><img src="images/ogin.gif" alt=""/></span>
+            <h2>Definicja</h2>
+            <p>Prokrastynacja (z łac. procrastinatio — odwlekanie) proces, który polega na odwlekaniu czynności ważnych
+                dla człowieka w danej chwili i zajęcie się sprawami bardziej przyjemnych lub mniej kłopotliwych.
+
+                Gdy narzekamy na brak czasu, często jest to spowodowane naszym zwlekaniem z trudnymi zadaniami, które
+                mamy wykonać, więc trwonimy czas siedząc w internecie, grając w gry, czy wykonując bezużyteczne
+                czynności.</p>
+
+            <p>Prokrastynacja może być jeszcze gorsza w przypadku zadań, które nie mają z góry ustalonego terminu, bądź
+                termin jest bardzo odległy, wtedy nasze zwlekanie może osiągnąć swój szczyt, powodując niezliczone
+                konsekwencje i co gorsza często dzieję się to nawet bez naszej świadomości.
+
+                Na przykład uczeń w szkole średniej dostaje zadanie domowe, napisanie rozprawki, z j.polskiego, ma je
+                oddać na następną lekcję, która jest następnego dnia. Co robi taki uczeń? Jeśli się nie będzie obijał to
+                napiszę rozprawkę, gdy wróci do domu, bo widzi jasno konsekwencje tego, co się może stać, gdy tego nie
+                zrobi.</p>
+
+            <p>Kolejny przykład to Student, na uczelni dostaje on wielki projekt do zrobienia, ma na niego dużo czasu,
+                4 miesiące. Co robi taki student? Czy tak jak pilny uczeń ze szkoły średniej postara się wykonać zadanie
+                w czasie? I tutaj jasno określa się problem Prokrastynacji, otóż uczeń miał jasno dany termin, dostępny
+                czas, konsekwencję itd. zaś sytuacja Studenta jest dużo bardziej skomplikowana, zamiast dnia ma on 4
+                miesiące, jest to 120 dni, co prawda widzi on konsekwencję swoich poczynań, gdy nie zrobi projektu na
+                czas, ale nie widzi żadnych konsekwencji, gdy powiedzmy nie będzie robił projektu przez miesiąc. I
+                często studenci wpadają w taką pułapkę, zostawiając pracę na ostatnie tygodnie czy nawet dni, wtedy
+                dopiero widać konsekwencję co się może stać, gdy nie zrobią tego co muszą i to jest ich motorem do
+                działania.</p>
+
+            <p>Można iść dalej tym tropem, i dać przykład prokrastynacji absolutnej. Co to takiego? Jest to najgorszy
+                typ zwlekania, występuje we wszystkich dziedzinach życia. Jest wtedy, gdy na daną rzecz nie ma terminu.
+                Bo czy jest termin na to, żeby być dobrym mężem, bądź żoną? Albo, żeby dobrze wychować swoje dzieci?
+                Albo czy jest termin końca naszego życia? Zapewne jest i Bóg go zna, albo więzień skazany na śmierć, ale
+                my zwykli ludzie już nie. Ten typ odwlekania powoduje najstraszliwsze konsekwencję, których nie w sposób
+                ogarnąć.</p>
+
+            <h2>Kontynuacja</h2>
+
+            <p> Pragnę jednak zawrócić i nie skupiać się za bardzo na prokrastynacji ostatecznej, gdyż jest to bardziej
+                wywód teologiczny, bądź psychologiczny.
+
+                A więc, gdy już wiemy, czym jest prokrastynacja, to co mamy z tym zrobić?
+
+                Mała przerwa od czasu do czasu nie jest niczym złym, jednak kontynuując prokrastynację możemy wpaść w
+                błędne koło oraz frustrację. Prokrastynacja to walka z czasem. Odwlekaniu na później tworzy iluzję, że
+                jutro będzie lepiej.
+
+                Właśnie przekładanie spraw na później poprawia chwilowo nastrój, jednak uświadomienie sobie konieczności
+                wykonania jakieś zadania powoduje w nas stres strach oraz nerwowość przed tym, że czegoś nie zdążymy
+                wykonać lub wykonamy to niestarannie.
+            </p>
+
+
+        </section>
+
+        <section class="main special">
+            <footer class="major">
+                <ul class="actions special">
+                    <li><a href="{{ path('welcome') }}" class="button">Wróć</a></li>
+                </ul>
+            </footer>
+        </section>
+
+    </div>
+
+    {% endblock %}
