@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Artykuł z poradami{% endblock %}
+
+{% block body %}
+
+<!-- Wrapper -->
+<div id="wrapper">
+
+    <!-- Header -->
+    <header id="header">
+        <h1>Dodatkowo</h1>
+        <p>Materiały dla zaciekawionych</p>
+    </header>
+
+    <!-- Main -->
+    <div id="main">
+
+        <!-- Content -->
+        <section id="content" class="main">
+            <span class="image main"><img src="images/pic04.jpg" alt=""/></span>
+
+            <h1>Gdzie szukać?</h1>
+            <p>Prokrastynacja to wielki problem dotykający ludzi na całym świecie, zwłaszcza młodych, coraz bardziej.
+                Dlatego warto zagłębić się w temat jeszcze bardziej czytając książki bądź słuchając ludzi, poniżej
+                zamieściłem odnośniki do niektórych materiałów.</p>
+
+
+        </section>
+
+        <section class="main special">
+            <footer class="major">
+                <ul class="actions special">
+                    <li><a href="{{ path('welcome') }}" class="button">Wróć</a></li>
+                </ul>
+            </footer>
+        </section>
+
+    </div>
+
+    {% endblock %}

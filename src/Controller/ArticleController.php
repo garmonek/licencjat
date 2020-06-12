@@ -25,4 +25,24 @@ class ArticleController extends AbstractController
             'controller_name' => 'ArticleController',
         ]);
     }
+
+    /**
+     * @Route("/porady", name="porady")
+     */
+    public function article_three()
+    {
+        return $this->render('article/porady.html.twig', [
+            'controller_name' => 'ArticleController',
+        ]);
+    }
+
+    /**
+     * @Route("/dodatkowo", name="dodatkowo")
+     */
+    public function article_four()
+    {
+        return $this->render('article/dodatkowo.html.twig', [
+            'controller_name' => 'ArticleController',
+        ]);
+    }
 }
